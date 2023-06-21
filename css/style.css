@@ -246,6 +246,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 40px;
 }
 
+@media screen and (max-width: 786px) {
+    .institute--other-links {
+        margin-top: 20px;
+    }
+}
+
 .other-link {
     border-radius: 25px;
     padding: 10px 20px;
@@ -263,6 +269,12 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     margin-top: 40px;
 
+}
+
+@media screen and (max-width: 786px) {
+    .institute--contact-info {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 1040px) {
@@ -342,3 +354,211 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 12px;
 }
 
+/* =========== ШКОЛЫ ============= */
+
+.small-title {
+    color: #333333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.institute--schools {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 786px) {
+    .institute--schools {
+        margin-top: 20px;
+    }
+}
+
+.institute--school-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.school-container {
+    box-shadow: 0 4px 4px 0 #00000040;
+
+    max-width: 49%;
+    width: 100%;
+    margin-bottom: 20px;
+
+    display: flex;
+}
+
+@media screen and (max-width: 1040px) {
+    .school-container {
+        max-width: 100%;
+    }
+}
+
+.school--img {
+    margin: 12px;
+    max-width: 180px;
+    min-width: 180px;
+
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1040px) {
+    .school--img {
+        max-width: 120px;
+        min-width: 120px;
+    }
+}
+
+
+.school--img img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.no-logo {
+    background-image: url("../img/sc-bg.png");
+    background-size: 100%;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.no-logo .school--img {
+    min-height: 180px;
+}
+
+@media screen and (max-width: 1040px) {
+    .no-logo .school--img {
+        min-height: 120px;
+    }
+}
+
+.school--text {
+    color: white;
+    padding: 20px 12px 12px 12px;
+    background: linear-gradient(90deg, transparent 0%, #444A8F 100%) #2E2E2E;
+
+    height: fit-content;
+    width: 100%;
+
+    transition: all 0.5s ease;
+}
+
+.school--text a {
+    color: white;
+}
+
+.school--text:hover {
+    background-color: #444A8F;
+}
+
+.school--text p:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.school--text p:not(:first-child) {
+    font-size: 12px;
+    margin-bottom: 0;
+    opacity: 70%;
+}
+
+/* ============= НОВОСТИ =============== */
+
+.institute--news {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 786px) {
+    .institute--news {
+        margin-top: 20px;
+    }
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*margin-bottom: 20px;*/
+}
+
+
+.news-card {
+    flex-grow: 1;
+
+    max-width: 32%;
+    height: 100%;
+    background-color: #780000;
+    box-shadow: 0 4px 4px 0 #00000040;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1040px) {
+    .news-card {
+        max-width: 49%;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .news-card {
+        max-width: 100%;
+        margin-bottom: 12px;
+    }
+}
+
+.news-card a {
+    color: white;
+    font-size: 14px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+}
+
+.news--img {
+    overflow: hidden;
+}
+
+.news--img img {
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+
+}
+
+.news-card a:hover .news--img img {
+    transform: scale(105%);
+}
+
+.news--title {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+
+    min-height: 6em;
+}
+
+@media screen and (max-width: 1400px) {
+    .news--title {
+        min-height: 8.5em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .news--title {
+        min-height: 6em;
+    }
+}
+
+.news--date {
+    margin-right: 16px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news--label p {
+    margin: 0;
+}
